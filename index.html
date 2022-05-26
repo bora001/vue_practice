@@ -10,8 +10,10 @@
   <body>
     <header><h1>Vue Practice</h1></header>
     <section id="this-goal">
-      <h2>Vue goal</h2>
-      <p>{{ myGoal }}</p>
+      <p>
+        <button @click="minus">-</button> {{ counter }}
+        <button @click="plus">+</button>
+      </p>
     </section>
     <script src="./app.js"></script>
   </body>

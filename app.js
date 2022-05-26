@@ -1,8 +1,16 @@
 const app = Vue.createApp({
   data() {
     return {
-      myGoal: "test!!!!",
+      counter: 0,
     };
+  },
+  methods: {
+    plus() {
+      this.counter = this.counter + 1;
+    },
+    minus() {
+      this.counter = this.counter - 1;
+    },
   },
 });
 
